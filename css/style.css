@@ -181,13 +181,19 @@ body {
     background-color: #188CE8;
   }
 
-/* Особенности */
+/* ----------------Особенности-------------------- */
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.feature-icon{
+.feature-icon-area {
+  display: flex;
+  width: 270px;
+  height: 120px;
   align-items: center;
+  justify-content: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 .features-list-title{
   margin-top: 0px;
@@ -201,7 +207,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 .features-list {
   display: flex;
@@ -246,7 +252,8 @@ padding-bottom: 94px;
     padding-bottom: 94px; 
     padding-top: 94px;
   }
-.our-team-title {
+.our-team-title,
+.regular-clients-title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -313,7 +320,51 @@ background-color: var(--tertiary-text-color);
 .team-spec-soc-link:focus .team-spec-soc-icon {
   fill: var(--tertiary-text-color);
 }
-/* стилизируем portfolio.html */
+
+/* ------------Постоянные клиенты------------- */
+
+.regular-clients {
+  text-align: center;
+  /* background-color: #f5f4fa; */
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.regular-clients-list {
+  display: flex;
+  justify-content: center;
+}
+.regular-clients-item {
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  
+}
+.regular-clients-item + .regular-clients-item {
+  margin-left: 30px;
+}
+.regular-clients-area {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;   
+  }
+.regular-clients-icon {
+  fill: #AFB1B8
+}
+.regular-clients-item:hover {
+ border-color: var(--accent-color);
+ cursor: pointer;
+}
+.regular-clients-item:hover .regular-clients-icon { 
+  fill: var(--accent-color)
+}
+
+
+/* ------------стилизируем portfolio.html------- */
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -417,6 +468,22 @@ border-left: 1px solid #EEEEEE;
   padding-top: 60px;
   padding-bottom: 60px;
   }
+  .footer-columns {
+    display: flex;
+  }
+  .rigt-column-title {
+    
+    margin-top: 12px;
+    margin-bottom: 0px;   
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+  }
     
 .logo-studio-foot {
   color: var(--tertiary-text-color);
@@ -425,6 +492,7 @@ border-left: 1px solid #EEEEEE;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 156px;
   }
     
 .adress {
@@ -457,4 +525,13 @@ border-left: 1px solid #EEEEEE;
 .footer-contacts .phone:hover,
 .footer-contacts .phone:focus {
   color: var(--accent-color);
+}
+.our-soc-links {
+  display: flex
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: tomato;
 }
