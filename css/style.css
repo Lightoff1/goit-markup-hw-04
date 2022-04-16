@@ -46,8 +46,10 @@ body {
 
 /* Стилизируем header */
 .header {
-  background-color: var(--tertiary-text-color);
+  /* background-color: var(--tertiary-text-color); */
   border-bottom: 1px solid #ECECEC;
+  padding-top: 32px;
+  padding-bottom: 32px;
   }
 
 /* Логотип */ 
@@ -64,8 +66,8 @@ body {
   letter-spacing: 0.03em;
   }
 .logo-studio-head {
-  padding-bottom: 25px;
-  padding-top: 24px;
+  /* padding-bottom: 25px;
+  padding-top: 24px; */
   margin-right: 93px;
   color: #000000;
   font-family: Raleway;
@@ -87,22 +89,28 @@ body {
   .nav-item .item:not(:last-child){
     margin-right: 50px;
   }
-  .nav-item .item{
+  /* .nav-item {
     padding-top: 32px;
     padding-bottom: 32px;
-  }
+  } */
   .header-contacts{
     margin-left: auto;
     
   }
   .mail-header{
     margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .mail-phone {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 .header-contacts .mail-header,
 .header-contacts .phone-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -399,7 +407,7 @@ button {
   background: #f5f4fa;
   border-radius: 4px;
   border: 0;
-  /* margin-right: 8px;   */
+  
 }
 .filter-buttons .item:not(:last-child){
   margin-right: 8px;
@@ -422,7 +430,7 @@ button {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  /* border: 1px solid #EEEEEE;  */
+  
 }
   .our-projects .item:nth-child(3n) {
   margin-right: 0px;
@@ -468,23 +476,9 @@ border-left: 1px solid #EEEEEE;
   padding-top: 60px;
   padding-bottom: 60px;
   }
-  .footer-columns {
+  .footer-list {
     display: flex;
-  }
-  .rigt-column-title {
-    
-    margin-top: 12px;
-    margin-bottom: 0px;   
-    
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
-  }
-    
+  } 
 .logo-studio-foot {
   color: var(--tertiary-text-color);
   font-family: "Raleway";
@@ -504,11 +498,11 @@ border-left: 1px solid #EEEEEE;
   margin-top: 20px;
   margin-bottom: 9px;
 }
-.footer-contacts{
+.footer-contacts {
   display: flex;
   flex-direction: column;
   }
-.mail{
+.mail {
   margin-bottom: 9px;
 }
 
@@ -526,12 +520,33 @@ border-left: 1px solid #EEEEEE;
 .footer-contacts .phone:focus {
   color: var(--accent-color);
 }
-.our-soc-links {
-  display: flex
-  align-items: center;
-  justify-content: center;
+
+.right-footer-list-title {
+  color: var(--tertiary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.our-soc-links-list {
+  display: flex;
+}
+.our-soc-link {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: tomato;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+.our-soc-item + .our-soc-item {
+ margin-left: 10px;
+}
+.our-soc-icon {
+  fill: var(--tertiary-text-color);
+}
+.our-soc-link:hover{
+  background-color: var(--accent-color);
 }
