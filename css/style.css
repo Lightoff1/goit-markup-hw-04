@@ -46,28 +46,28 @@ body {
 
 /* Стилизируем header */
 .header {
-  /* background-color: var(--tertiary-text-color); */
+  background-color: var(--tertiary-text-color);
   border-bottom: 1px solid #ECECEC;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  }
+}
 
-/* Логотип */ 
+/* Логотип */
 .header .container {
   display: flex;
   align-items: center;
 }
-.logo-web {  
+
+.logo-web {
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  }
+}
+
 .logo-studio-head {
-  /* padding-bottom: 25px;
-  padding-top: 24px; */
+  padding-bottom: 25px;
+  padding-top: 24px;
   margin-right: 93px;
   color: #000000;
   font-family: Raleway;
@@ -75,42 +75,40 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  }
-  
+}
+
 /* Элементы навигации */
 .nav-item {
-  display: flex;  
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  }
-  .nav-item .item:not(:last-child){
-    margin-right: 50px;
-  }
-  /* .nav-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  } */
-  .header-contacts{
-    margin-left: auto;
-    
-  }
-  .mail-header{
-    margin-right: 50px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .mail-phone {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+}
+
+.nav-item .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-item .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contacts {
+  margin-left: auto;
+
+}
+
+.mail-header {
+  margin-right: 50px;
+}
 
 .header-contacts .mail-header,
 .header-contacts .phone-header {
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -129,12 +127,12 @@ body {
 .header-contacts .phone-header:focus {
   color: var(--accent-color);
 }
+
 .header-mail-icon,
 .header-phone-icon {
   margin-right: 10px;
   fill: currentColor
 }
-
 
 .nav-item .link.current {
   color: var(--accent-color);
@@ -528,6 +526,8 @@ border-left: 1px solid #EEEEEE;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 .our-soc-links-list {
   display: flex;
