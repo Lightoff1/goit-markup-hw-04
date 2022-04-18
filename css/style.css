@@ -341,8 +341,7 @@ border-radius: 0px 0px 4px 4px;
 /* ------------Постоянные клиенты------------- */
 
 .regular-clients {
-  text-align: center;
-  /* background-color: #f5f4fa; */
+  text-align: center;  
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -350,7 +349,7 @@ border-radius: 0px 0px 4px 4px;
   display: flex;
   justify-content: center;
 }
-.regular-clients-item {
+.regular-clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,13 +365,13 @@ border-radius: 0px 0px 4px 4px;
 .regular-clients-icon {
   fill: #AFB1B8
 }
-.regular-clients-item:hover,
-.regular-clients-item:focus {
+.regular-clients-link:hover,
+.regular-clients-link:focus {
  cursor: pointer;
  border-color: var(--accent-color);
  
 }
-.regular-clients-item:hover .regular-clients-icon,
+.regular-clients-link:hover .regular-clients-icon,
 .regular-clients-link:focus .regular-clients-icon { 
   fill: var(--accent-color);
   }
